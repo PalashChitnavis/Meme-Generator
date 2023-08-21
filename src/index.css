@@ -1,0 +1,332 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.root{
+  font-family: 'Glegoo', serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.4;
+  user-select: none;
+}
+.header-main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.header-top{
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+}
+.header-middle{
+  display: flex;
+  font-size: 20px;
+  flex-wrap: wrap;
+  text-align: center;
+}
+.header-bottom{
+  display: flex;
+  
+  font-size: 20px;
+}
+.logo-github{
+  width: 30px;
+}
+.meme-section{
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 98vw;
+  height: 80vh;
+  background-color: slategrey;
+}
+.meme-image-container{
+  background-color:bisque;
+  border-radius: 10px;
+  width: 60vw;
+  height: 78vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.meme-image{
+  position: relative;
+  width:95%;
+  height: 95%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.other-side{
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.input-field{
+  display: flex;
+  flex-direction: column;
+  width: 36vw;
+  height: 20vh;
+  justify-content: space-between;
+  align-items: center;
+}
+.rdn-btn{
+  width: 30vw;
+  height: 15vh;
+  font-family:'Glegoo', serif ;
+  font-size: 30px;
+}
+.css-button-3d--black {
+  min-width: 30vw;
+  height: 15vh;
+  color: #fff;
+  padding: 5px 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  border-radius: 5px;
+  border: none;
+  background: #343a40;
+  box-shadow: 0 5px #212529;
+}
+.css-button-3d--black:hover {
+  box-shadow: 0 3px #212529;
+  top: 1px;
+}
+.css-button-3d--black:active {
+  box-shadow: 0 0 #212529;
+  top: 5px;
+}
+.file-meme{
+  display: none;
+}
+.label-file{
+  width: 30vw;
+  height: 8vh;
+  font-family:'Glegoo', serif ;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.text-input{
+  display: flex;
+  flex-direction: column;
+  width: 35vw;
+  height:35vh ;
+  justify-content: space-around;
+}
+.form-input{
+  height: 10vh;
+  border-radius: 10px;
+  text-indent: 20px;
+  font-family:'Glegoo', serif ;
+  font-size: 20px;
+}
+.form-input::placeholder{
+  font-family:'Glegoo', serif ;
+  font-size: 20px;
+}
+.dwn-btn{
+  height: 8vh;
+  width: 20vw;
+  font-family:'Glegoo', serif ;
+  font-size: 20px;
+}
+.css-button-sliding-to-left--black {
+  min-width: 20vw;
+  height: 8vh;
+  color: #fff;
+  padding: 5px 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  border-radius: 5px;
+  z-index: 0;
+  background: #fff;
+  overflow: hidden;
+  border: 2px solid #212529;
+  color: #212529;
+}
+.css-button-sliding-to-left--black:hover {
+  color: #fff;
+}
+.css-button-sliding-to-left--black:hover:after {
+  width: 100%;
+}
+.css-button-sliding-to-left--black:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  transition: all 0.3s ease;
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 100%;
+  background: #212529;
+}
+.meme-text {
+  width: fit-content;
+  text-align: center;
+  transform: translateX(-50%);
+  font-family: impact, sans-serif;
+  font-size: 3em;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 1px;
+  text-shadow:
+      2px 2px 0 #000,
+      -2px -2px 0 #000,
+      2px -2px 0 #000,
+      -2px 2px 0 #000,
+      0 2px 0 #000,
+      2px 0 0 #000,
+      0 -2px 0 #000,
+      -2px 0 0 #000,
+      2px 2px 5px #000;
+}
+
+.footer-section{
+  text-align: center;
+}
+@media (max-width:800px){
+  .header-top{
+      font-size: 25px;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      text-align: center;
+  }
+  .header-middle{
+      display: flex;
+      font-size: 14px;
+      flex-wrap: wrap;
+      text-align: center;
+  }
+  .header-bottom{
+      display: flex;
+      font-size: 14px;
+  }
+  .logo-github{
+      width: 18px;
+  }
+  .meme-section{
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      width: 98vw;
+      height: 80vh;
+      background-color: slategrey;
+  }
+  .meme-image-container{
+      margin-top: 10px;
+      border-radius: 10px;
+      width: 98vw;
+      max-width: 90vw;
+      height: 40vh;
+  } 
+  .other-side{
+      margin-top: 10px;
+      margin-bottom: 10px;
+      display: flex;
+      height: 40vh;
+      flex-direction: column;
+      justify-content: space-evenly;
+  }
+  .input-field{
+      display: flex;
+      flex-direction: row;
+      width: 100vw;
+      height: 10vh;
+      justify-content: space-around;
+  }
+  .rdn-btn{
+      width: 40vw;
+      min-width: 35vw;
+      height: 8vh;
+      font-size: 13px;
+  }
+  
+  .label-file{
+      width: 40vw;
+      min-width: 35vw;
+      height: 8vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 13px;
+  }
+  .text-input{
+      display: flex;
+      flex-direction: column;
+      width: 35vw;
+      height:35vh ;
+      justify-content: space-around;
+      align-items: center;
+  }
+  .form-input{
+      height: 9vh;
+      width: 60vw;
+      min-width: 40vw;
+      font-family:'Glegoo', serif ;
+      font-size: 18px;
+  }
+  .form-input::placeholder{
+    font-family:'Glegoo', serif ;
+    font-size: 18px;
+  }
+  .dwn-btn{
+      height: 8vh;
+      width: 50vw;
+  }
+  .meme-text {
+    position: absolute;
+    width: 80%;
+    text-align: center;
+    left: 30%;
+    transform: translateX(-50%);
+    margin: 15px 0;
+    padding: 0 5px;
+    font-family: impact, sans-serif;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 1px;
+    text-shadow:
+        2px 2px 0 #000,
+        -2px -2px 0 #000,
+        2px -2px 0 #000,
+        -2px 2px 0 #000,
+        0 2px 0 #000,
+        2px 0 0 #000,
+        0 -2px 0 #000,
+        -2px 0 0 #000,
+        2px 2px 5px #000;
+  }
+  .top{
+    top: 15vh ;
+  }
+  .bottom{
+    top: 40vh;
+  }
+}
