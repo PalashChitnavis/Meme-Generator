@@ -14,7 +14,7 @@ function Header(){
             </div>
             <div className="header-bottom">
                 <div><img className="logo-github" src="./github.svg" alt="github-logo" />&nbsp;</div>
-                <div><a href="https://github.com/PalashChitnavis/meme-generator-ptc">Code on GitHub</a></div>
+                <div><a href="https://github.com/PalashChitnavis/meme-generator">Code on GitHub</a></div>
             </div>
         </div>
         </div>
